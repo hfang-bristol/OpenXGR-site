@@ -110,7 +110,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/EAgene"><i class="fa fa-play-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Enrichment Analyser<br>(Genes)&nbsp;-&nbsp;EAG</a></h4>
                 </div>
                 <div class="panel-body">
-                	<p class="help-block" style="font-size:16px; margin:0;">Enrichment analysis for genes using ontologies</p>
+                	<p class="help-block" style="font-size:15px; margin:0;">Enrichment analysis for genes using ontologies</p>
+                	<span class="truncated">
+                		<br>
+						<strong>EAG</strong> uses gene-centric ontology annotations to perform enrichment analysis.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>
@@ -121,7 +126,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/EAsnp"><i class="fa fa-play-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Enrichment Analyser<br>(SNPs)&nbsp;-&nbsp;EAS</a></h4>
                 </div>
                 <div class="panel-body">
-					<p class="help-block" style="font-size:16px; margin:0;">SNPs linked to genes for enrichment analysis</p>
+					<p class="help-block" style="font-size:15px; margin:0;">SNPs linked to genes for enrichment analysis</p>
+                	<span class="truncated">
+                		<br>
+						<strong>EAS</strong> identifies genes linked from input SNPs (alongside the significance information) and conducts ontology enrichment analysis for the linked genes. Linking SNPs to genes is enabled by genomic proximity or using functional genomic datasets about PCHi-C and e/pQTL.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>
@@ -132,7 +142,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/EAregion"><i class="fa fa-play-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Enrichment Analyser<br>(Genomic Regions)&nbsp;-&nbsp;EAR</a></h4>
                 </div>
                 <div class="panel-body">
-					<p class="help-block" style="font-size:16px; margin:0;">Genomic regions linked to genes for enrichment analysis</p>
+					<p class="help-block" style="font-size:15px; margin:0;">Regions linked to genes for enrichment analysis</p>
+                	<span class="truncated">
+                		<br>
+						<strong>EAR</strong> first identifies genes linked from input genomic regions using functional genomic datasets about PCHi-C and enhancer-gene maps and then conducts ontology enrichment analysis based on the linked genes.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>
@@ -149,7 +164,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/SAgene"><i class="fa fa-share-alt-square fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Subnetwork Analyser<br>(Genes)&nbsp;-&nbsp;SAG</a></h4>
                 </div>
                 <div class="panel-body">
-                	<p class="help-block" style="font-size:16px; margin:0;">Subnetwork analysis for gene-level summary data</p>
+                	<p class="help-block" style="font-size:15px; margin:0;">Subnetwork analysis for gene-level summary data</p>
+                	<span class="truncated">
+                		<br>
+						<strong>SAG</strong> takes as input gene-level summary data to identify a subset of the gene network in a manner that the resulting subnetwork contains a desired number of highly scored and interconnected genes.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>
@@ -160,7 +180,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/SAsnp"><i class="fa fa-share-alt-square fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Subnetwork Analyser<br>(SNPs)&nbsp;-&nbsp;SAS</a></h4>
                 </div>
                 <div class="panel-body">
-					<p class="help-block" style="font-size:16px; margin:0;">SNPs linked to genes for subnetwork analysis</p>
+					<p class="help-block" style="font-size:15px; margin:0;">SNPs linked to genes for subnetwork analysis</p>
+                	<span class="truncated">
+                		<br>
+						<strong>SAS</strong> identifies a gene subnetwork from input SNP-level summary data. It first uses genomic proximity, e/pQTL or PCHi-C to link SNPs to genes, and then uses information on the linked genes to identify the gene subnetwork.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>
@@ -171,7 +196,12 @@
                 	<h4><a class="btn btn-success btn-block active" role="button" href="/OpenXGR/SAregion"><i class="fa fa-share-alt-square fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Subnetwork Analyser<br>(Genomic Regions)&nbsp;-&nbsp;SAR</a></h4>
                 </div>
                 <div class="panel-body">
-					<p class="help-block" style="font-size:16px; margin:0;">Genomic regions linked to genes for subnetwork analysis</p>
+					<p class="help-block" style="font-size:15px; margin:0;">Regions linked to genes for subnetwork analysis</p>
+                	<span class="truncated">
+                		<br>
+						<strong>SAR</strong> first identifies genes linked from input genomic regions using PCHi-C datasets or enhancer-gene maps, followed by subnetwork analysis based on the linked genes.
+						<br>
+                	</span>
                 </div>
             </div>
         </div>

@@ -45,19 +45,19 @@
 			 <div class = "panel-body">
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;We are pleased to introduce OpenXGR, an updated version of our previously established XGR software that has gained increasing popularity. OpenXGR is a newly designed web server that offers real-time enrichment and subnetwork analyses for a user-input list of genes, SNPs, genomic regions, or protein domains, through leveraging ontologies, networks, and many other datasets (such as e/pQTL, promoter capture Hi-C, and enhancer-gene maps). This new website is free and open to all users, and does not require users to log in.</h5>
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;We are pleased to introduce OpenXGR, an updated version of our previously established XGR software that has gained increasing popularity. OpenXGR is a newly designed web server that offers real-time enrichment and subnetwork analyses for a user-input list of genes, SNPs, or genomic regions, through leveraging ontologies, networks, and many other functional genomic datasets (such as e/pQTL, promoter capture Hi-C, and enhancer-gene maps). This new website is free and open to all users, and does not require users to log in.</h5>
 				</fieldset>
 				
 				<br>
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;One of the major bottlenecks for genomics research is how to bridge the widening gap between generated genomic summary data and downstream knowledge discovery. We define genomic summary data as a list of genes or SNPs (more generally, genomic regions), along with their significance level (e.g. p-values). We are at the forefront of making sense of genomic summary data for knowledge discovery through developing approaches and tools that have been shown to be efficient and effective. These tools and approaches include dcGO, dnet, XGR, and Pi; see below PUBLICATIONS (KEY OR RELATED).</h5>
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;One of the major bottlenecks for genomics research is how to bridge the widening gap between generated genomic summary data and downstream knowledge discovery. We define genomic summary data as a list of genes or SNPs (more generally, genomic regions), along with their significance level (e.g. p-values). We are at the forefront of making sense of genomic summary data for knowledge discovery through developing approaches and tools that have been shown to be efficient and effective. These tools and approaches include XGR, Pi, dnet, and dcGO; see below <strong>KEY PUBLICATIONS</strong>.</h5>
 				</fieldset>
 				
 				<br>
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;OpenXGR builds upon our previous approaches (with most of citations received in the past two years) and the expanding knowledgebase of ontologies and networks. It includes seven analysers, each doing specific interpretations tailored to genomic summary data at the gene, SNP, genomic region, or protein domain level. These include four enrichment analysers that identify enriched ontology terms and three subnetwork analysers that identify gene subnetworks, described below:
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;OpenXGR builds upon our previous approaches (with most of citations received in the past two years) and the expanding knowledgebase of ontologies and networks. It includes seven analysers, each doing specific interpretations tailored to genomic summary data at the gene, SNP, or genomic region level. These include four enrichment analysers that identify enriched ontology terms and three subnetwork analysers that identify gene subnetworks, described below:
 				<ul>
 				<li><a href="/OpenXGR/EAgene" target="EAgene"><i class="fa fa-play-circle fa-1x"></i>&nbsp;ENRICHMENT ANALYSER (GENES) - EAG</a>, identifying enriched ontology terms from input gene list;
 				<li><a href="/OpenXGR/EAsnp" target="EAsnp"><i class="fa fa-play-circle fa-1x"></i>&nbsp;ENRICHMENT ANALYSER (SNPS) - EAS</a>, identifying enriched ontology terms for genes linked from input SNP list;
@@ -72,13 +72,13 @@
 				<br>
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;Please refer to <a href="https://hfang-bristol.github.io/OpenXGR" target="github"><i class="fa fa-github fa-1x"></i>&nbsp;Source Code</a> and <a href="/OpenXGRbooklet/index.html" target="use manual"><i class="fa fa-book fa-1x fa-flip-horizontal"></i>&nbsp;User Manual</a> for step-by-step instructions on how to build and use OpenXGR, respectively.</h5>
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;Please refer to <a href="https://github.com/hfang-bristol/OpenXGR-site" target="github"><i class="fa fa-github fa-1x"></i>&nbsp;Source Code</a> and <a href="/OpenXGRbooklet/index.html" target="use manual"><i class="fa fa-book fa-1x fa-flip-horizontal"></i>&nbsp;User Manual</a> for step-by-step instructions on how to build and use OpenXGR, respectively. Looking further ahead, we are excited about exploring the use of large language models to support genomic summary data interpretation, either in ontology annotation and gene network generation or in providing outputs in a conversational way similar to ChatGPT (the product of <a href="https://openai.com" target="openai">OpenAI</a>).</h5>
 				</fieldset>
 				
 				<br>
 				
 				<fieldset>
-<table cellspacing='0' cellpadding='0' width=97%>
+<table cellspacing='0' cellpadding='0' width=99%>
 <tr>
 <td align=center><IMG src="/app/img/OpenXGR.about.png" class="img_responsive">
 </td>
@@ -171,12 +171,14 @@
 				<h5 class="citation_title"><strong>Innovative Research Team of High-Level Local Universities in Shanghai</strong></h5>
 				<p>2022 - 2024</p>
 			</fieldset>
-	
+			
+			<!--
 			<fieldset>
 				<h5 class="citation_title"><strong>Shanghai Pujiang Program (21PJ1409600)</strong></h5>
 				<p>2021 - 2023</p>
 			</fieldset>
-	
+			-->
+			
 			<fieldset>
 				<h5 class="citation_title"><strong>Program for Professor of Special Appointment (Eastern Scholar) at Shanghai Institutions of Higher Learning</strong></h5>
 				<p>2020 - 2022</p>
@@ -192,7 +194,7 @@
 		  <div class="panel-heading">
 			 <h4 class="panel-title" id="bookmark4">
 				<a id="barplot-button" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-				   <i class="fa fa-plus-circle"></i><strong>&nbsp;&nbsp;PUBLICATIONS (KEY OR RELATED)</strong></a>
+				   <i class="fa fa-plus-circle"></i><strong>&nbsp;&nbsp;KEY PUBLICATIONS</strong></a>
 				</a>
 			 </h4>
 		  </div>
@@ -250,7 +252,7 @@
 		  <div class="panel-heading">
 			 <h4 class="panel-title" id="bookmark5">
 				<a id="barplot-button" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-				   <i class="fa fa-plus-circle"></i><strong>&nbsp;&nbsp;SELECTED CITATIONS (LAST TWO YEARS)</strong></a>
+				   <i class="fa fa-plus-circle"></i><strong>&nbsp;&nbsp;SELECTED CITATIONS</strong></a>
 				</a>
 			 </h4>
 		  </div>
@@ -258,10 +260,24 @@
 			<ul>
 
 			<fieldset>
+			<h5 class="citation_title">Prior anti-CTLA-4 therapy impacts molecular characteristics associated with anti-PD-1 response in advanced melanoma</h5>
+			<p><em>Cancer Cell</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1016/j.ccell.2023.03.010" target="10.1016/j.ccell.2023.03.010">10.1016/j.ccell.2023.03.010</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ccell.2023.03.010" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+
+			<fieldset>
 			<h5 class="citation_title">Brain Catalog: a comprehensive resource for the genetic landscape of brain-related traits</h5>
 			<p><em>Nucleic Acids Research</em> 2023</p>
 			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1093/nar/gkac895" target="10.1093/nar/gkac895">10.1093/nar/gkac895</a>
 			<span class="__dimensions_badge_embed__" data-doi="10.1093/nar/gkac895" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+			
+			<fieldset>
+			<h5 class="citation_title">The dcGO domain-centric ontology database in 2023: new website and extended annotations for protein structural domains</h5>
+			<p><em>Journal of Molecular Biology</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1016/j.jmb.2023.168093" target="10.1016/j.jmb.2023.168093">10.1016/j.jmb.2023.168093</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jmb.2023.168093" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
 			</fieldset>
 
 			<fieldset>
@@ -269,6 +285,20 @@
 			<p><em>Journal of the American Academy of Dermatology</em> 2023</p>
 			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1016/j.jaad.2022.12.050" target="10.1016/j.jaad.2022.12.050">10.1016/j.jaad.2022.12.050</a>
 			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jaad.2022.12.050" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+			
+			<fieldset>
+			<h5 class="citation_title">Inducible apelin receptor knockdown reduces differentiation efficiency and contractility of hESC-derived cardiomyocytes</h5>
+			<p><em>Cardiovascular Research</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://doi.org/10.1093/cvr/cvac065" target="10.1093/cvr/cvac065">10.1093/cvr/cvac065</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1093/cvr/cvac065" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+			
+			<fieldset>
+			<h5 class="citation_title">Klarigi: Characteristic explanations for semantic biomedical data</h5>
+			<p><em>Computers in Biology and Medicine</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://doi.org/10.1016/j.compbiomed.2022.106425" target="10.1016/j.compbiomed.2022.106425">10.1016/j.compbiomed.2022.106425</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.compbiomed.2022.106425" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
 			</fieldset>
 
 			<fieldset>

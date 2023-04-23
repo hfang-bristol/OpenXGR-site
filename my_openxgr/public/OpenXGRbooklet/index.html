@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-04-06" />
+<meta name="date" content="2023-04-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,7 +52,7 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
 <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
 <script src="libs/datatables-binding-0.27/datatables.js"></script>
 <link href="libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -144,23 +144,23 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">OpenXGR User Manual</h1>
-<p class="date"><em>2023-04-06</em></p>
+<p class="date"><em>2023-04-23</em></p>
 </div>
 <div id="index" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Section 1</span> OVERVIEW<a href="index.html#index" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:logo"></span>
-<img src="index_files/figure-html/logo-1.png" alt="The logo for eXploring Genomic Relations + (XGR PLUS)." width="25%" />
+<img src="index_files/figure-html/logo-1.png" alt="The logo for OpenXGR." width="25%" />
 <p class="caption">
-FIGURE 1.1: The logo for eXploring Genomic Relations + (XGR PLUS).
+FIGURE 1.1: The logo for OpenXGR.
 </p>
 </div>
 <hr>
 <blockquote>
 <p><strong>Motivation</strong></p>
 </blockquote>
-<p>We are very pleased to introduce an updated version of our XGR software, which has gained increasing popularity in genomic summary data interpretation since its first release (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/27964755">Genome Medicine 2016</a>). This update features a newly designed web server, called XGR PLUS or XGR+, now made available <a href="http://www.genomicsummary.pro/XGRplus">here</a> to all users for free and without any login requirements. It enables almost real-time enrichment and subnetwork analyses for a user-input list of genes, SNPs, genomic regions, or protein domains, leveraging ontologies, networks, and knowledgebase resources about functional genomic datasets, such as e/pQTL, promoter capture Hi-C, and enhancer-gene maps. Besides, the web server is user-friendly, very suitable for users who are unfamiliar with coding.</p>
+<p>We are very pleased to introduce an updated version of our XGR software, which has gained increasing popularity in genomic summary data interpretation since its first release (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/27964755">Genome Medicine 2016</a>). This update features a newly designed web server, called OpenXGR, now made available <a href="http://www.openxgr.com">here</a> to all users for free and without any login requirements. It enables almost real-time enrichment and subnetwork analyses for a user-input list of genes, SNPs, or genomic regions, leveraging ontologies, networks, and knowledgebase resources about functional genomic datasets, such as e/pQTL, promoter capture Hi-C, and enhancer-gene maps. Besides, the web server is user-friendly, very suitable for users who are unfamiliar with coding.</p>
 <p>One of the major challenges in genomics research is how to bridge the gap between generated genomic summary data and downstream knowledge discovery. We define genomic summary data as a list of genes or SNPs (more generally, genomic regions), along with their significance levels (e.g. p-values). We are leading the field in making sense of genomic summary data for knowledge discovery through developing approaches and tools that have been verified to be efficient and effective, including XGR (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/27964755">Genome Medicine 2016</a>), dnet (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/25246945">Genome Medicine 2014</a>), Priority index (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/31253980">Nature Genetics 2019</a>), and dcGO (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/23161684">Nucleic Acids Research 2013</a>).</p>
-<p>Building upon our previous approaches that have stood the test of time (with most of citations received in the past two years), and also incorporating the growing knowledgebase of ontologies and networks, XGR+ offers seven analysers for enrichment and subnetwork analyses, each doing specific interpretations tailored to genomic summary data at the gene, SNP, genomic region, and protein domain levels.</p>
+<p>Building upon our previous approaches that have stood the test of time (with most of citations received in the past two years), and also incorporating the growing knowledgebase of ontologies and networks, OpenXGR offers six analysers for enrichment and subnetwork analyses, each doing specific interpretations tailored to genomic summary data at the gene, SNP, and genomic region levels.</p>
 <blockquote>
 <p><strong>Enrichment Analysers</strong></p>
 </blockquote>
@@ -180,8 +180,15 @@ FIGURE 1.1: The logo for eXploring Genomic Relations + (XGR PLUS).
 <blockquote>
 <p><strong>Primary Data Sources</strong></p>
 </blockquote>
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d4978535f8a9d0c21b94" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-d4978535f8a9d0c21b94">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"caption":"<caption>A summary of primary data sources on ontologies and networks that XGR+ relies on.<\/caption>","data":[["ChEMBL","DGIdb","Disease Ontology","ENRICHR Consensus TFs","Experimental Factor Ontology","Gene Ontology","Human Phenotype Ontology","KEGG","Mammalian Phenotype Ontology","MitoPathway","Mondo Disease Ontology","MSIGDB","REACTOME","STRING","Target tractability buckets","TRRUST"],["version 32","2022-Feb release","March 2023 release","April 2023","3.52.0 release","April 2023","June 2022 release","105.0 release","April 2023","3.0 version","v2023-01-04 release","v2023.1.Hs release","version 84 release","version 11.5","23.02 release","2018.04.16 release"],["https://www.ebi.ac.uk/chembl","https://www.dgidb.org","https://disease-ontology.org","https://maayanlab.cloud/Enrichr","https://www.ebi.ac.uk/efo","http://geneontology.org","https://hpo.jax.org","https://www.genome.jp/kegg","https://www.informatics.jax.org","https://www.broadinstitute.org/mitocarta","https://monarchinitiative.org","https://www.gsea-msigdb.org/gsea/msigdb","https://reactome.org","https://cn.string-db.org","https://platform-docs.opentargets.org/target/tractability","https://www.grnpedia.org/trrust"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Ontologies or networks<\/th>\n      <th>Version or retrieval date<\/th>\n      <th>Link to primary resources<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"searchHighlight":true,"dom":"Bfrtip","buttons":["csv","copy"],"scrollX":true,"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2bd19abf8e7c36e976c7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2bd19abf8e7c36e976c7">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"caption":"<caption>A summary of primary data sources on ontologies and networks that OpenXGR relies on.<\/caption>","data":[["ChEMBL","DGIdb","Disease Ontology","ENRICHR Consensus TFs","Experimental Factor Ontology","Gene Ontology","Human Phenotype Ontology","KEGG","Mammalian Phenotype Ontology","MitoPathway","Mondo Disease Ontology","MSIGDB","REACTOME","STRING","Target tractability buckets","TRRUST"],["version 32","2022-Feb release","March 2023 release","April 2023","3.52.0 release","April 2023","June 2022 release","105.0 release","April 2023","3.0 version","v2023-01-04 release","v2023.1.Hs release","version 84 release","version 11.5","23.02 release","2018.04.16 release"],["https://www.ebi.ac.uk/chembl","https://www.dgidb.org","https://disease-ontology.org","https://maayanlab.cloud/Enrichr","https://www.ebi.ac.uk/efo","http://geneontology.org","https://hpo.jax.org","https://www.genome.jp/kegg","https://www.informatics.jax.org","https://www.broadinstitute.org/mitocarta","https://monarchinitiative.org","https://www.gsea-msigdb.org/gsea/msigdb","https://reactome.org","https://cn.string-db.org","https://platform-docs.opentargets.org/target/tractability","https://www.grnpedia.org/trrust"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Ontologies or networks<\/th>\n      <th>Version or retrieval date<\/th>\n      <th>Link to primary resources<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"searchHighlight":true,"dom":"Bfrtip","buttons":["csv","copy"],"scrollX":true,"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<hr>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ga"></span>
+<img src="index_files/figure-html/ga-1.png" alt="The OpenXGR web server is depicted as our 'Earth' in the sense that it comprises six analysers designed to interpret summary-level genomic data related to genes (G), SNPs (S), and genomic regions (R). Similar to satellites that orbit our planet and provide real-time information, OpenXGR leverages knowledgebase on ontologies, networks, and functional genomic datasets to enable real-time enrichment and subnetwork analyses." width="95%" />
+<p class="caption">
+FIGURE 1.2: The OpenXGR web server is depicted as our ‘Earth’ in the sense that it comprises six analysers designed to interpret summary-level genomic data related to genes (G), SNPs (S), and genomic regions (R). Similar to satellites that orbit our planet and provide real-time information, OpenXGR leverages knowledgebase on ontologies, networks, and functional genomic datasets to enable real-time enrichment and subnetwork analyses.
+</p>
+</div>
 </div>
             </section>
 

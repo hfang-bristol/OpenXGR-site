@@ -34,6 +34,7 @@
 			}
 
 		});
+		
 	</script>
 	
 % end
@@ -58,8 +59,9 @@ my $info='
 
 <h5>Other information</h5>
 <ul>
-<li>The text box at <b>Step 1</b> is pre-filled with the provided example when the interface page is first-visited or refreshed.
-<li>Before clicking the <b>SUBMIT</b> button, please replace the example with your own data <b>EVERY TIME</b>. Please select the pre-filled example (Control + A), and then copy/paste the user-input content into the text box.
+<li>By default, the text box at <b>Step 1</b> is pre-filled with the provided example when the interface page is first-visited or refreshed. 
+<li>When the user clicks on any text area within the box <b>FOR THE FIRST TIME</b>, the pre-filled example <b>DISAPPEARS</b>, and the text box is ready to receive user-input data.
+<li>Before clicking the <b>SUBMIT</b> button, please replace the example with your own data <b>EVERY TIME</b>.
 <li>For bug reports and inquiries, please send an email <a href="mailto:fh12355@rjh.com.cn"><i class="fa fa-envelope-o"></i></a> to get your feedback (also we want to learn about strengths and weaknesses).
 </ul>
 ';
@@ -455,17 +457,19 @@ ZMPSTE24
 	
 		<div class="text-right">
 			% if(1){
-				<a href="javascript:newWin('/app/examples/_tmp_RMD_EAgene.html', 'Example', '909', '1169')"><i class="fa fa-key fa-lg" aria-hidden="true"></i>&nbsp;Example IO</a>&nbsp;&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/enrichment-analyser-genes---eag.html', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-lg fa-flip-horizontal"></span>&nbsp;User Manual</a>
+				<a href="javascript:newWin('/app/examples/_tmp_RMD_EAgene.html', 'Example', '909', '1169')"><i class="fa fa-key fa-lg" aria-hidden="true"></i>&nbsp;Example IO</a>&nbsp;&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/enrichment-analyser-genes---eag.html', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-lg fa-flip-horizontal"></span>&nbsp;User Manual</a>&nbsp;&nbsp;&nbsp;
 			% }else{
-				<a href="javascript:newWin('/app/examples/_tmp_RMD_EAgene.html', 'Example', '909', '1169')"><i class="fa fa-key fa-lg" aria-hidden="true"></i>&nbsp;Example Input/Output</a>&nbsp;&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/index.html#enrichment-analyser-genes', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-lg"></span>&nbsp;User Manual</a>
+				<a href="javascript:newWin('/app/examples/_tmp_RMD_EAgene.html', 'Example', '909', '1169')"><i class="fa fa-key fa-lg" aria-hidden="true"></i>&nbsp;Example Input/Output</a>&nbsp;&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/index.html#enrichment-analyser-genes', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-lg"></span>&nbsp;User Manual</a>&nbsp;&nbsp;&nbsp;
 			% }
 		</div>
 	
 		<div class="text-center">
 			<h3><a href="/OpenXGR/EAgene"><i class="fa fa-play-circle fa-lg"></i>&nbsp;&nbsp;ENRICHMENT ANALYSER (GENES) - EAG</a>&nbsp;:&nbsp;Identifying enriched ontology terms from input genes</h3>
 		</div>
+		
 	</div>
 </div>
+
 
 <!-- error text -->
 <div id="error-container" class="container collapse">
@@ -489,7 +493,7 @@ ZMPSTE24
 <div id="progress-container" class="container collapse">
 	<div class="progress progress-striped active">
 		<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-			<i class="fa fa-cog fa-spin fa-lg"></i>&nbsp;&nbsp;EAG analysing your input gene list ... 
+			<i class="fa fa-cog fa-spin fa-lg"></i>&nbsp;&nbsp;Please stand by, while EAG is analysing your input gene list ... 
 		</div>
 	</div>
 </div>
@@ -505,17 +509,17 @@ ZMPSTE24
 			<%== $info %>
 		</p>
 	</div>
-	
+
 	<div class="row">
 		<div class="col-lg-12">
 			
 			<form id="submit-form" class="form-horizontal" enctype="multipart/form-data" method="POST">
 				
-				<p><strong>Step 1</strong>: Paste your genes (official symbols; see<a href="/app/examples/eg_EAgene_PMID29121237GenAge.txt" download="/app/examples/eg_EAgene_PMID29121237GenAge.txt" target="/app/examples/eg_EAgene_PMID29121237GenAge.txt">&nbspExample Input</a>).</p>
+				<p><strong>Step 1</strong>: Paste your genes (official symbols; see<a href="/app/examples/eg_EAgene_PMID29121237GenAge.txt" download="/app/examples/eg_EAgene_PMID29121237GenAge.txt" target="/app/examples/eg_EAgene_PMID29121237GenAge.txt">&nbspExample Input</a>).&nbsp;<strong class="my-tooltip" data-toggle="tooltip" data-placement="auto right" title="After clicking on the text area, the pre-filled example will disappear, leaving the text box ready for the user to input their own data."><i class="fa fa-info-circle fa-lg"></i></strong></p>
 				
 				<div class="form-group">
 					<div class="col-sm-12">
-						<textarea id="genelist" name="genelist" class="form-control table" rows="4" required="required"><%== $example_genes %></textarea>
+						<textarea id="genelist" name="genelist" class="form-control table" rows="4" required="required" onfocus="clearFieldFirstTime(this);"><%== $example_genes %></textarea>
 					</div>
 				</div>
 

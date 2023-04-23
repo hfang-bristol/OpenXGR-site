@@ -35,6 +35,9 @@ sub startup {
 	$r->get('/OPENXGR')->to(template=>'index', controller=>'action', action=>'index');
 	$r->get('/XGR')->to(template=>'index', controller=>'action', action=>'index');
 	$r->get('/xgr')->to(template=>'index', controller=>'action', action=>'index');
+	$r->get('/xgrplus')->to(template=>'index', controller=>'action', action=>'index');
+	$r->get('/XGRPLUS')->to(template=>'index', controller=>'action', action=>'index');
+	$r->get('/XGRplus')->to(template=>'index', controller=>'action', action=>'index');	
 
   	## help
   	$r->get('/OpenXGR/help')->to(template=>'OpenXGR_help', format=>'html', handler=>'ep', controller=>'action', action=>'index');

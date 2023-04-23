@@ -106,9 +106,13 @@
 							<a href="/OpenXGR/help" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Providing the information about OpenXGR"><i class="fa fa-info-circle fa-lg"></i>&nbsp;&nbsp;&nbsp;About OpenXGR</a>
 						</li>
 				  		
+				  		<br>
+				  		
 				  		<li>
-				  		<a href="https://hfang-bristol.github.io/OpenXGR" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Providing the source code for OpenXGR" target="github"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;&nbsp;Source Code</a>
+				  		<a href="https://github.com/hfang-bristol/OpenXGR-site" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Providing the source code for OpenXGR" target="github"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;&nbsp;Source Code</a>
 				  		</li>
+				  		
+				  		<br>
 				  		
 				  		<li>
 				  		<a href="/OpenXGRbooklet/index.html" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Providing the user manual for OpenXGR" target="manual"><i class="fa fa-book fa-lg fa-flip-horizontal"></i>&nbsp;&nbsp;&nbsp;User Manual</a>
@@ -123,11 +127,15 @@
 						<li <%== ($tab=~/OpenXGR\/EAgene/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/EAgene" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Enrichment analysis for genes using ontologies"><i class="fa fa-play-circle fa-lg"></i>&nbsp;&nbsp;&nbsp;Genes</a>
 						</li>
-						
+				  		
+				  		<br>
+				  		
 						<li <%== ($tab=~/OpenXGR\/EAsnp/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/EAsnp" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="SNPs linked to genes for enrichment analysis"><i class="fa fa-play-circle fa-lg"></i>&nbsp;&nbsp;&nbsp;SNPs</a>
 						</li>
-						
+				  		
+				  		<br>
+				  		
 						<li <%== ($tab=~/OpenXGR\/EAregion/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/EAregion" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Genomic regions linked to genes for enrichment analysis"><i class="fa fa-play-circle fa-lg"></i>&nbsp;&nbsp;&nbsp;Genomic Regions</a>
 						</li>
@@ -151,11 +159,15 @@
 						<li <%== ($tab=~/OpenXGR\/SAgene/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/SAgene" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Subnetwork analysis for gene-level summary data"><i class="fa fa-share-alt-square fa-lg"></i>&nbsp;&nbsp;&nbsp;Genes</a>
 						</li>
-						
+				  		
+				  		<br>
+				  		
 						<li <%== ($tab=~/OpenXGR\/SAsnp/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/SAsnp" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="SNPs linked to genes for subnetwork analysis"><i class="fa fa-share-alt-square fa-lg"></i>&nbsp;&nbsp;&nbsp;SNPs</a>
 						</li>
-						
+				  		
+				  		<br>
+				  		
 						<li <%== ($tab=~/OpenXGR\/SAregion/i)? 'class="active"':'' %>>
 							<a href="/OpenXGR/SAregion" class="my-tooltip" data-toggle="tooltip" data-placement="auto bottom" title="Genomic regions linked to genes for subnetwork analysis"><i class="fa fa-share-alt-square fa-lg"></i>&nbsp;&nbsp;&nbsp;Genomic Regions</a>
 						</li>
@@ -259,7 +271,21 @@
 				window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
 			}
 			
-						
+			// clear the field for textarea
+			// By default, the text box is pre-filled with the provided example (by default) when the interface page is first-visited or refreshed.
+			// When the focus is set to the text box for the first time
+			// When the user clicks on any text area within the box for the first time, the filled example disappears, and the text box is ready to receive user-input contents.
+			function clearFieldFirstTime(element) {
+  				if(element.counter==undefined) {
+					element.counter = 1;
+  				}else {
+					element.counter++;
+  				}
+  				if(element.counter == 1) {
+					element.value = '';
+  				}
+			}
+	
 			// Advanced button
 			$('#advanced-toggle').on('shown.bs.collapse', function () {
 			   $("#advanced-toggle button .fa").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
