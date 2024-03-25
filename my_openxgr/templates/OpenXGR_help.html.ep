@@ -51,13 +51,13 @@
 				<br>
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;One of the major bottlenecks for genomics research is how to bridge the widening gap between generated genomic summary data and downstream knowledge discovery. We define genomic summary data as a list of genes or SNPs (more generally, genomic regions), along with their significance level (e.g. p-values). We are at the forefront of making sense of genomic summary data for knowledge discovery through developing approaches and tools that have been shown to be efficient and effective. These tools and approaches include XGR, Pi, dnet, and dcGO; see below <strong>KEY PUBLICATIONS</strong>.</h5>
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;One of the major bottlenecks for genomics research is how to bridge the widening gap between generated genomic summary data and downstream knowledge discovery. We define genomic summary data as a list of genes or SNPs (more generally, genomic regions), along with their significance level (e.g. p-values). We are at the forefront of making sense of genomic summary data for knowledge discovery through developing approaches and tools that have been shown to be efficient and effective. These tools and approaches include XGR, Priority index, dnet, and dcGO; see below <strong>KEY PUBLICATIONS</strong>.</h5>
 				</fieldset>
 				
 				<br>
 				
 				<fieldset>
-				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;OpenXGR builds upon our previous approaches (with most of citations received in the past two years) and the expanding knowledgebase of ontologies and networks. It includes seven analysers, each doing specific interpretations tailored to genomic summary data at the gene, SNP, or genomic region level. These include four enrichment analysers that identify enriched ontology terms and three subnetwork analysers that identify gene subnetworks, described below:
+				<h5 class="about_title"><i class="fa fa-minus fa-1x"></i>&nbsp;&nbsp;OpenXGR builds upon our previous approaches (with most of citations received in the past two years) and the expanding knowledgebase of ontologies and networks. It includes six analysers, each doing specific interpretations tailored to genomic summary data at the gene, SNP, or genomic region level. These include three enrichment analysers that identify enriched ontology terms and three subnetwork analysers that identify gene subnetworks, described below:
 				<ul>
 				<li><a href="/OpenXGR/EAgene" target="EAgene"><i class="fa fa-play-circle fa-1x"></i>&nbsp;ENRICHMENT ANALYSER (GENES) - EAG</a>, identifying enriched ontology terms from input gene list;
 				<li><a href="/OpenXGR/EAsnp" target="EAsnp"><i class="fa fa-play-circle fa-1x"></i>&nbsp;ENRICHMENT ANALYSER (SNPS) - EAS</a>, identifying enriched ontology terms for genes linked from input SNP list;
@@ -202,6 +202,14 @@
 			<ul>
 	
 			<fieldset>
+			<h5 class="citation_title">OpenXGR: a web-server update for genomic summary data interpretation</h5>
+			<p><em>Nucleic Acids Research</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1093/nar/gkad357" target="10.1093/nar/gkad357">10.1093/nar/gkad357</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1093/nar/gkad357" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+			<br>
+
+			<fieldset>
 			<h5 class="citation_title">XGR software for enhanced interpretation of genomic summary data, illustrated by application to immunological traits</h5>
 			<a href="https://f1000.com/prime/727108713" target="_blank"><img src="http://cdn.f1000.com.s3.amazonaws.com/images/badges/badgef1000.gif" alt="Access the recommendation on F1000Prime" id="bg" /></a>
 			<p><em>Genome Medicine</em> 2016</p>
@@ -209,7 +217,7 @@
 			<span class="__dimensions_badge_embed__" data-doi="10.1186/s13073-016-0384-y" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
 			</fieldset>
 			<br>
-			
+	
 			<fieldset>
 			<h5 class="citation_title">A genetics-led approach defines the drug target landscape of 30 immune-related traits</h5>
 			<a href="https://f1000.com/prime/736064114" target="_blank"><img src="http://cdn.f1000.com.s3.amazonaws.com/images/badges/badgef1000.gif" alt="Access the recommendation on F1000Prime" id="bg" /></a>
@@ -264,6 +272,13 @@
 			<p><em>Cancer Cell</em> 2023</p>
 			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1016/j.ccell.2023.03.010" target="10.1016/j.ccell.2023.03.010">10.1016/j.ccell.2023.03.010</a>
 			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ccell.2023.03.010" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
+			</fieldset>
+
+			<fieldset>
+			<h5 class="citation_title">Comprehensive epigenomic profiling reveals the extent of disease-specific chromatin states and informs target discovery in ankylosing spondylitis</h5>
+			<p><em>Cell Genomics</em> 2023</p>
+			<strong>DOI:</strong> <a href="http://dx.doi.org/10.1016/j.xgen.2023.100306" target="10.1016/j.xgen.2023.100306">10.1016/j.xgen.2023.100306</a>
+			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.xgen.2023.100306" data-style="small_rectangle" data-legend="hover-right" data-hide-zero-citations="true"></span>
 			</fieldset>
 
 			<fieldset>

@@ -752,7 +752,7 @@ R_pipeline <- function (input.file="", output.file="", network="", subnet.size="
 		library(igraph)
 		
 		input.file <- "~/Sites/XGR/XGRplus-site/app/examples/eg_SAgene_PMID27863249hORG.txt"
-		data <- read_delim(input.file, delim=" ") %>% as.data.frame() %>% select(1:2)
+		data <- read_delim(input.file, delim="\t") %>% as.data.frame() %>% select(1:2)
 		network <- "STRING_high"
 		subnet.size <- 30
 	}

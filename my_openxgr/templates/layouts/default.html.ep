@@ -195,7 +195,7 @@
 		  	<hr>
 		  	
 		  	<footer class="text-center">
-				2023 &copy; <a href="/OpenXGR/help">OpenXGR</a>&nbsp;&nbsp;|&nbsp;&nbsp;A Real-Time Genomic Summary Data Interpretation Web Server&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/index.html', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-1x fa-flip-horizontal"></span>&nbsp;User Manual</a>&nbsp;&nbsp;|&nbsp;&nbsp;Contact&nbsp;<a href="mailto:fh12355@rjh.com.cn">(<i class="fa fa-envelope-o"></i>)</a>
+				2024 &copy; <a href="/OpenXGR/help">OpenXGR</a>&nbsp;&nbsp;|&nbsp;&nbsp;A Real-Time Genomic Summary Data Interpretation Web Server&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:newWin('/OpenXGRbooklet/index.html', 'OpenXGRbooklet', '909', '1169')"><span class="fa fa-book fa-1x fa-flip-horizontal"></span>&nbsp;User Manual</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/37158276/" target="37158276"><i class="fa fa-quote-left"></i>&nbsp;Cite&nbsp;<i class="fa fa-quote-right"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;Contact&nbsp;<a href="mailto:fh12355@rjh.com.cn">(<i class="fa fa-envelope-o"></i>)</a>
 		  	</footer>
 		  	
 		<!-- end container theme-showcase -->
@@ -328,6 +328,13 @@
 			});
 			$('#panel5').on('hidden.bs.collapse', function () {
 			   $("#panel5 #bookmark5 .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+			});
+			// Resulting panel6 button
+			$('#panel6').on('shown.bs.collapse', function () {
+			   $("#panel6 #bookmark6 .fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+			});
+			$('#panel6').on('hidden.bs.collapse', function () {
+			   $("#panel6 #bookmark6 .fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
 			});
 			
 		</script>
